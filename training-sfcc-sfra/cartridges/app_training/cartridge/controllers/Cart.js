@@ -4,12 +4,6 @@ var server = require('server');
 
 server.extend(module.superModule);
 
-'use strict';
-
-var server = require('server');
-
-server.extend(module.superModule);
-
 server.append('Show', function (req, res, next) {
     var viewData = res.getViewData();
 
@@ -20,3 +14,5 @@ server.append('Show', function (req, res, next) {
     return next();
 });
 
+
+module.exports = server.exports();
