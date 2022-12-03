@@ -140,7 +140,8 @@ $negative-spacer: -0.625rem;
 }
 
 .promo-code-submit {
-    padding-left: 0;
+    padding-left: 100px !important;
+
 }
 
 .quantity-form {
@@ -221,10 +222,12 @@ $negative-spacer: -0.625rem;
     margin-bottom: 0.625rem;
     padding-right: 0;
     padding-left: 0;
+    
 }
 
 .coupon-code {
     font-size: 1.125em;
+    
 }
 
 .coupon-applied {
@@ -312,3 +315,9 @@ $negative-spacer: -0.625rem;
 .bonus-product-button {
     margin-right: 1.5em;
 }
+
+.form-group{
+    display:none !important;
+
+}
+

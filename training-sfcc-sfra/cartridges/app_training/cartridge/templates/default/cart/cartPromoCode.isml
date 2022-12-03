@@ -1,12 +1,41 @@
+
+
+
+<div class="row" >
+
+
+
+    <button class="col-12  ">
+
+        <a href="#" id="promo-code" >Click here if you have a coupon code</a>
+    </button>
+
+
+<!---
+<div class="col-12  col-12 d-sm-none">
+
+        <p href="#" id="promo-info"  class="optional-promo">${Resource.msg('action.enter.promo.code','cart',null)}</p>
+    </div>
+--->
+</div>
+
+
+
+
+
+
+
+
 <div class="row">
     <div class="col-12 ">
-        <a href="#" class="optional-promo">${Resource.msg('action.enter.promo.code','cart',null)}</a>
-    </div>
-</div>
-<div class="row">
-    <div class="col-12 d-sm-none">
         <form action="${pdict.actionUrls.submitCouponCodeUrl}" class="promo-code-form" method="GET" name="promo-code-form">
-            <div class="form-group">
+
+
+
+
+
+
+            <div class="form-group" style="display:block">
                 <label for="couponCode">${Resource.msg('label.promo.code','cart',null)}</label>
                 <div class="row">
                     <div class="col-7">
@@ -19,13 +48,18 @@
 
                     <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}"/>
 
-                    <div class="col-5 promo-code-submit">
+                    <div class="col-5 promo-code-submit" >
                         <button type="submit" class="btn btn-primary btn-block promo-code-btn">
                             ${Resource.msg('button.submit.promo.code','cart',null)}
                         </button>
                     </div>
                 </div>
             </div>
+
+
+
+
+
         </form>
     </div>
 </div>
