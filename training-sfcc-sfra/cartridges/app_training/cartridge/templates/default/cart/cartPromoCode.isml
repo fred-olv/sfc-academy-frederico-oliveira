@@ -1,12 +1,17 @@
-<div class="row">
-    <div class="col-12 ">
-        <a href="#" class="optional-promo">${Resource.msg('action.enter.promo.code','cart',null)}</a>
-    </div>
+<div class="row" >
+
+
+
+    <button class="col-12  ">
+
+        <a href="#" id="promo-code" >Click here if you have a coupon code</a>
+    </button>
+
 </div>
 <div class="row">
     <div class="col-12 d-sm-none">
         <form action="${pdict.actionUrls.submitCouponCodeUrl}" class="promo-code-form" method="GET" name="promo-code-form">
-            <div class="form-group">
+            <div class="form-group" style="display:block">
                 <label for="couponCode">${Resource.msg('label.promo.code','cart',null)}</label>
                 <div class="row">
                     <div class="col-7">
