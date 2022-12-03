@@ -1,40 +1,11 @@
-
-
-
 <div class="row" >
-
-
-
-    <button class="col-12  ">
-
+    <div class="col-12  ">
         <a href="#" id="promo-code" >Click here if you have a coupon code</a>
-    </button>
-
-
-<!---
-<div class="col-12  col-12 d-sm-none">
-
-        <p href="#" id="promo-info"  class="optional-promo">${Resource.msg('action.enter.promo.code','cart',null)}</p>
     </div>
---->
 </div>
-
-
-
-
-
-
-
-
 <div class="row">
     <div class="col-12 ">
         <form action="${pdict.actionUrls.submitCouponCodeUrl}" class="promo-code-form" method="GET" name="promo-code-form">
-
-
-
-
-
-
             <div class="form-group" style="display:block">
                 <label for="couponCode">${Resource.msg('label.promo.code','cart',null)}</label>
                 <div class="row">
@@ -55,11 +26,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
         </form>
     </div>
 </div>
