@@ -9,9 +9,9 @@
 
 </div>
 <div class="row">
-    <div class="col-12 d-sm-none">
+    <div class="col-12 ">
         <form action="${pdict.actionUrls.submitCouponCodeUrl}" class="promo-code-form" method="GET" name="promo-code-form">
-            <div class="form-group" style="display:none">
+            <div class="form-group" id="promo-info" style="display:none">
                 <label for="couponCode">${Resource.msg('label.promo.code','cart',null)}</label>
                 <div class="row">
                     <div class="col-7">

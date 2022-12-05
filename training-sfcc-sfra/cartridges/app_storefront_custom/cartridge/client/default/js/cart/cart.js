@@ -1,14 +1,5 @@
 'use strict';
 
-function displayPromoBox (){
-    document.getElementById("promo-info").style.display = "block";
-}
-
-module.exports = {
-    test: function(){
-        $("#promo-code").on("click",displayPromoBox)
-    }
-}
 
 
 
@@ -341,7 +332,17 @@ function confirmDelete(actionUrl, productID, productName, uuid) {
     $productToRemoveSpan.empty().append(productName);
 }
 
+function displayPromoBox (){
+    document.getElementById("promo-info").style.display = "block";
+
+}
+
+
 module.exports = function () {
+    $("#promo-code").on("click",function () {
+        displayPromoBox();
+
+    })
     $('body').on('click', '.remove-product', function (e) {
         e.preventDefault();
 
@@ -805,3 +806,5 @@ module.exports = function () {
     base.trapChooseBonusProductModalFocus();
     base.onClosingChooseBonusProductModal();
 };
+
+
