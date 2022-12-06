@@ -1,14 +1,16 @@
-
-<isinclude template="/components/modules" sf-toolkit="off" />
-<iscontentasset aid="teste_frontend_content_asset"/>
-
-
 <isdecorate template="common/layout/page">
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addJs('/js/productTile.js');
         assets.addCss('/css/homePage.css');
     </isscript>
+
+
+    <isinclude template="/components/modules" sf-toolkit="off" />
+    <iscontentasset aid="teste_frontend_content_asset"/>
+
+
+
 
     <!-- +1.888.555.0199 --><!--This phone is a requirement to support existing Gomez monitor of SiteGenesis. Demadware customers can remove this.-->
     <div class="home-main homepage">
